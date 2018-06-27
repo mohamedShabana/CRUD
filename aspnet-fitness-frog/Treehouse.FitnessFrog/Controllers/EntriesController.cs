@@ -53,6 +53,9 @@ namespace Treehouse.FitnessFrog.Controllers
             // Intensity
             // Exclude
             // Notes
+            DateTime dateValue;
+            DateTime.TryParse(date, out dateValue);
+
 
             ViewBag.Date = date;
             ViewBag.ActivityId = activityId;
