@@ -44,8 +44,8 @@ namespace Treehouse.FitnessFrog.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Add(string date, string activityId, 
-            string duration, string intensity, string exclude, string notes)
+        public ActionResult Add(DateTime date, int activityId, 
+            double duration, Entry.IntensityLevel intensity, bool exclude, string notes)
         {
             //string date = Request.Form["Date"];
             // Activity Id
@@ -53,8 +53,8 @@ namespace Treehouse.FitnessFrog.Controllers
             // Intensity
             // Exclude
             // Notes
-            DateTime dateValue;
-            DateTime.TryParse(date, out dateValue);
+            //DateTime dateValue;
+            //DateTime.TryParse(date, out dateValue);
 
 
             ViewBag.Date = date;
